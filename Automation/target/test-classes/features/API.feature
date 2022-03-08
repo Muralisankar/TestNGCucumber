@@ -1,4 +1,3 @@
-#Author: muralisankar.a@hungerrush.com
 
 @tag
 Feature: API Automation
