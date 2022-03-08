@@ -1,0 +1,20 @@
+package StepDefinitions;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+
+public class stepDefinition {
+	
+	@Given("^Testing API Sample1$")
+	public static void Testing_API_Sample1() {
+		
+		System.out.println("Sample1");
+	}
+	
+	@And("^Testing API Sample2$")
+	public static void Testing_API_Sample2() {
+		System.out.println("Sample2");
+		
+	}
+
+}
