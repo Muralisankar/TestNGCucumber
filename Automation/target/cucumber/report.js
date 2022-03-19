@@ -1,8 +1,14 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("API.feature");
 formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#Author : Muralisankar"
+    }
+  ],
   "line": 3,
   "name": "API Automation",
-  "description": "I want to use this template for my feature file",
+  "description": "",
   "id": "api-automation",
   "keyword": "Feature",
   "tags": [
@@ -13,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 7,
+  "line": 6,
   "name": "Testing the APIs",
   "description": "",
   "id": "api-automation;testing-the-apis",
@@ -21,18 +27,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
+      "line": 5,
       "name": "@tag1"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Testing API Sample1 \"Testing\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Testing API Sample2 \"Testing\"",
   "keyword": "Then "
 });
@@ -46,7 +52,8 @@ formatter.match({
   "location": "stepDefinition.testing_api_sample1(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 488397200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -58,6 +65,7 @@ formatter.match({
   "location": "stepDefinition.testing_api_sample2(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 144400,
+  "status": "passed"
 });
 });

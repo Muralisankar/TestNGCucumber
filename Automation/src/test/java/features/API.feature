@@ -1,7 +1,6 @@
-
+#Author : Muralisankar
 @tag
 Feature: API Automation
-  I want to use this template for my feature file
 
   @tag1
   Scenario: Testing the APIs
