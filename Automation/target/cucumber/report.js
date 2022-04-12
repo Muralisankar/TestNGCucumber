@@ -14,58 +14,70 @@ formatter.feature({
   "tags": [
     {
       "line": 2,
-      "name": "@tag"
+      "name": "@APITest1"
     }
   ]
 });
 formatter.scenario({
   "line": 6,
-  "name": "Testing the APIs",
+  "name": "TC0001 Validate a gamecard",
   "description": "",
-  "id": "api-automation;testing-the-apis",
+  "id": "api-automation;tc0001-validate-a-gamecard",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 5,
-      "name": "@tag1"
+      "name": "@TC0001"
     }
   ]
 });
 formatter.step({
   "line": 7,
-  "name": "Testing API Sample1 \"Testing\"",
+  "name": "Create a new gamecard",
   "keyword": "Given "
 });
 formatter.step({
   "line": 8,
-  "name": "Testing API Sample2 \"Testing\"",
+  "name": "Verify the balance of the gamecard",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "Add amount to the gamecard",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "Verify the updated balance of the gamecard",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Testing",
-      "offset": 21
-    }
-  ],
-  "location": "stepDefinition.testing_api_sample1(String)"
+  "location": "stepDefinition.create_a_new_gamecard()"
 });
 formatter.result({
-  "duration": 488397200,
+  "duration": 5582654100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Testing",
-      "offset": 21
-    }
-  ],
-  "location": "stepDefinition.testing_api_sample2(String)"
+  "location": "stepDefinition.verify_the_balance_of_the_gamecard()"
 });
 formatter.result({
-  "duration": 144400,
+  "duration": 1674233800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefinition.add_amount_to_the_gamecard()"
+});
+formatter.result({
+  "duration": 1523491600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefinition.verify_the_updated_balance_of_the_gamecard()"
+});
+formatter.result({
+  "duration": 1531909500,
   "status": "passed"
 });
 });

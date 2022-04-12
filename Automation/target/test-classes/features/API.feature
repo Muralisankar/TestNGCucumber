@@ -1,12 +1,11 @@
 #Author : Muralisankar
-@tag
+@APITest1
 Feature: API Automation
 
-  @tag1
-  Scenario: Testing the APIs
-    Given Testing API Sample1 "Testing"
-    Then Testing API Sample2 "Testing"
+  @TC0001
+  Scenario: TC0001 Validate a gamecard
+    Given Create a new gamecard
+    And Verify the balance of the gamecard
+    And Add amount to the gamecard
+    Then Verify the updated balance of the gamecard
     
-   
-
-
